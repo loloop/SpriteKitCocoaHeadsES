@@ -14,7 +14,7 @@ final class GameScene: SKScene {
     private var childrenHandlers: [EventHandler] = []
 
     private lazy var contactDelegate: SKPhysicsContactDelegate = {
-        let delegate = ScenePhysicsContactDelegate(parentScene: self)
+        let delegate = ScenePhysicsContactDelegate(parent: self)
         return delegate
     }()
 

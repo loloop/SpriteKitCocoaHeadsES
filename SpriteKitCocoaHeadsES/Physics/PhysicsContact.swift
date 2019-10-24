@@ -10,19 +10,19 @@ import Foundation
 import SpriteKit
 
 final class ScenePhysicsContactDelegate: NSObject, SKPhysicsContactDelegate {
-    private weak var scene: SKScene?
+    private weak var parent: EventHandler?
 
-    init(parentScene scene: SKScene) {
-        self.scene = scene
+    init(parent: EventHandler) {
+        self.parent = parent
     }
 
     func didBegin(_ contact: SKPhysicsContact) {
         let event = PhysicsEvent(contact: contact, type: .didBegin)
-        scene?.children.forEach { $0.handle(event: event) }
+        parent?.raise(event: event)
     }
 
     func didEnd(_ contact: SKPhysicsContact) {
         let event = PhysicsEvent(contact: contact, type: .didEnd)
-        scene?.children.forEach { $0.handle(event: event) }
+        parent?.raise(event: event)
     }
 }
