@@ -9,16 +9,18 @@
 import Foundation
 import SpriteKit
 
-#if DEBUG
+
 extension SKView {
     var showsDebuggingOptions: Bool {
         set {
+            #if DEBUG
             showsNodeCount = newValue
             showsFPS = newValue
             showsFields = newValue
             showsPhysics = newValue
             showsDrawCount = newValue
             showsQuadCount = newValue
+            #endif
         }
 
         get {
@@ -31,5 +33,5 @@ extension SKView {
         }
     }
 }
-#endif
+
 
