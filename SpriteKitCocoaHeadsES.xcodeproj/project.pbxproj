@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B42B61D12360DF820022524F /* EnemyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B61D02360DF820022524F /* EnemyController.swift */; };
-		B42B61D32360F4D50022524F /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B61D22360F4D50022524F /* AudioController.swift */; };
-		B42B61D52360FE000022524F /* song.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B42B61D42360FB820022524F /* song.m4a */; };
-		B42B61D92360FFA80022524F /* death.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B42B61D82360FFA80022524F /* death.m4a */; };
 		B4600C32235E5EEB00253C3A /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4600C31235E5EEB00253C3A /* PhysicsCategory.swift */; };
 		B4600C34235E5EFB00253C3A /* ZPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4600C33235E5EFB00253C3A /* ZPosition.swift */; };
 		B4600C36235E5F4100253C3A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4600C35235E5F4100253C3A /* GameScene.swift */; };
@@ -47,9 +44,6 @@
 
 /* Begin PBXFileReference section */
 		B42B61D02360DF820022524F /* EnemyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyController.swift; sourceTree = "<group>"; };
-		B42B61D22360F4D50022524F /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
-		B42B61D42360FB820022524F /* song.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = song.m4a; sourceTree = "<group>"; };
-		B42B61D82360FFA80022524F /* death.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = death.m4a; sourceTree = "<group>"; };
 		B4600C30235E5E6E00253C3A /* SpriteKitCocoaHeadsES.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpriteKitCocoaHeadsES.entitlements; sourceTree = "<group>"; };
 		B4600C31235E5EEB00253C3A /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
 		B4600C33235E5EFB00253C3A /* ZPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPosition.swift; sourceTree = "<group>"; };
@@ -108,7 +102,6 @@
 				B4854D5F23606AA2000BB81A /* LevelController.swift */,
 				B4854D652360ADA9000BB81A /* GameController.swift */,
 				B42B61D02360DF820022524F /* EnemyController.swift */,
-				B42B61D22360F4D50022524F /* AudioController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,8 +194,6 @@
 				B4BB180D235931B800102217 /* LaunchScreen.storyboard */,
 				B4BB1810235931B800102217 /* Info.plist */,
 				B4600C33235E5EFB00253C3A /* ZPosition.swift */,
-				B42B61D42360FB820022524F /* song.m4a */,
-				B42B61D82360FFA80022524F /* death.m4a */,
 			);
 			path = SpriteKitCocoaHeadsES;
 			sourceTree = "<group>";
@@ -268,8 +259,6 @@
 				B4BB180A235931B600102217 /* Main.storyboard in Resources */,
 				B4BB180C235931B800102217 /* Assets.xcassets in Resources */,
 				B4BB180F235931B800102217 /* LaunchScreen.storyboard in Resources */,
-				B42B61D52360FE000022524F /* song.m4a in Resources */,
-				B42B61D92360FFA80022524F /* death.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +272,6 @@
 				B4854D5A235FE9D6000BB81A /* Floor.swift in Sources */,
 				B4854D6423609DCE000BB81A /* VisibleFloor.swift in Sources */,
 				B4854D3E235FA649000BB81A /* DamageEvent.swift in Sources */,
-				B42B61D32360F4D50022524F /* AudioController.swift in Sources */,
 				B4854D49235FB51D000BB81A /* CGRect+CenterPoint.swift in Sources */,
 				B4854D5C23606332000BB81A /* Trigger.swift in Sources */,
 				B4854D5E2360640E000BB81A /* GenericEvent.swift in Sources */,
@@ -457,7 +445,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpriteKitCocoaHeadsES/SpriteKitCocoaHeadsES.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 7N9Z7384YN;
+				DEVELOPMENT_TEAM = 3XY53MLZSN;
 				INFOPLIST_FILE = SpriteKitCocoaHeadsES/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,7 +467,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpriteKitCocoaHeadsES/SpriteKitCocoaHeadsES.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = 7N9Z7384YN;
+				DEVELOPMENT_TEAM = 3XY53MLZSN;
 				INFOPLIST_FILE = SpriteKitCocoaHeadsES/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

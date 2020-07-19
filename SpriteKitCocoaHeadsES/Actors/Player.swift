@@ -12,12 +12,13 @@ import SpriteKit
 final class Player: SKSpriteNode {
 
     enum State {
+        case start
         case dead
         case running
         case jumping
     }
 
-    var currentState: State = .running
+    var currentState: State = .start
 
     let runningFrames: [SKTexture]
     lazy var jumpingFrames: [SKTexture] = {
@@ -102,6 +103,7 @@ final class Player: SKSpriteNode {
     }
 
     func animateRun() {
+        if currentState == .running { return }
         removeAllActions()
         currentState = .running
         let animation = SKAction.animate(with: runningFrames, timePerFrame: 0.05)

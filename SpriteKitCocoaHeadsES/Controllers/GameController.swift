@@ -12,17 +12,21 @@ import GameController
 final class GameController: EventHandler {
 
     private weak var parent: EventHandler?
-    private let controller: GCController
+    private var controller: GCController?
 
     init(parent: EventHandler) {
-        self.controller = GCController()
         self.parent = parent
-        setupInput()
+        addObservers()
     }
 
-    func setupInput() {
-        controller.extendedGamepad?.valueChangedHandler = { [weak self] pad, element in
-            self?.raise(event: InteractionEvent(type: .tap))
+    func addObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(setupInput), name: Notification.Name.GCControllerDidConnect, object: nil)
+    }
+
+    @objc func setupInput() {
+        self.controller = GCController.controllers().first
+        controller?.extendedGamepad?.buttonA.pressedChangedHandler = { [weak self] (_,_,pressed) in
+            if pressed { self?.raise(event: InteractionEvent(type: .tap)) }
         }
     }
 

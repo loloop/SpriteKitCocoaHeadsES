@@ -28,8 +28,7 @@ final class GameScene: SKScene {
         let sknodes = [
             UIController(),
             LevelController(),
-            PlayerController(),
-            AudioController()
+            PlayerController()
         ]
 
         let gameController = GameController(parent: self)
